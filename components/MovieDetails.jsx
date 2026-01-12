@@ -1,7 +1,6 @@
 import { Button, Image, StyleSheet, Text, View } from "react-native";
 
 export default function MovieDetails({
-    id,
     title,
     year,
     director,
@@ -15,6 +14,7 @@ export default function MovieDetails({
             <Text style={styles.headerText}>Details Page</Text>
             <Text>{title}</Text>
             <Image source={{ uri: imageUrl }} style={{ width: 100, height: 148 }} />
+            <Text>First aired in {year}</Text>
             <Text>From the director {director}</Text>
             <Text>{genre}</Text>
             <Text>{durationMinutes} minutes</Text>
