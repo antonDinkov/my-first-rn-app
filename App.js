@@ -19,7 +19,7 @@ export default function App() {
         return (
             <>
                 <StatusBar style="auto" />
-                <MovieDetails movie={detailsMovie} closeButtonFn={closedetailsHandler}></MovieDetails>
+                <MovieDetails {...detailsMovie} closeButtonFn={closedetailsHandler}></MovieDetails>
             </>)
     } else {
         return (
